@@ -1,0 +1,7 @@
+## Silverlining
+
+Sliverlining
+
+#### License
+
+MIT

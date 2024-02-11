@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include silverlining *.css
+recursive-include silverlining *.csv
+recursive-include silverlining *.html
+recursive-include silverlining *.ico
+recursive-include silverlining *.js
+recursive-include silverlining *.json
+recursive-include silverlining *.md
+recursive-include silverlining *.png
+recursive-include silverlining *.py
+recursive-include silverlining *.svg
+recursive-include silverlining *.txt
+recursive-exclude silverlining *.pyc

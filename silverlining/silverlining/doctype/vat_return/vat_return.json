@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "autoname": "format:VAT-{nepal_month}-{company}",
+ "creation": "2021-08-09 16:36:35.277739",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "company_address",
+  "year",
+  "month",
+  "nepal_from_date",
+  "from_date",
+  "nepal_to_date",
+  "to_date",
+  "column_break_5",
+  "vat_to_be_adjusted_from_last_month",
+  "adjusted_tax_paid_on_purchase",
+  "adjusted_tax_paid_on_sales",
+  "no_debit_advice",
+  "no_credit_advice",
+  "voucher_no",
+  "section_break_9",
+  "json_output",
+  "missing_field_invoices",
+  "nepal_month"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Link",
+   "label": "Company Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Year"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "json_output",
+   "fieldtype": "Code",
+   "label": "JSON Output"
+  },
+  {
+   "fieldname": "missing_field_invoices",
+   "fieldtype": "Small Text",
+   "label": "Invoices with no Place Of Supply",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adjusted_tax_paid_on_purchase",
+   "fieldtype": "Float",
+   "label": "Adjusted Tax paid on Purchase"
+  },
+  {
+   "fieldname": "adjusted_tax_paid_on_sales",
+   "fieldtype": "Float",
+   "label": "Adjusted Tax paid on Sales"
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Data",
+   "label": "Voucher NO"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_debit_advice",
+   "fieldtype": "Float",
+   "label": "No. Debit Advice"
+  },
+  {
+   "fieldname": "no_credit_advice",
+   "fieldtype": "Float",
+   "label": "No. Credit Advice"
+  },
+  {
+   "description": "The date should be in this format only DD-MM-YYYY",
+   "fieldname": "nepal_from_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nepal From Date",
+   "reqd": 1
+  },
+  {
+   "description": "The date should be in this format only DD-MM-YYYY",
+   "fieldname": "nepal_to_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nepal To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nepal_month",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nepal Month"
+  },
+  {
+   "description": "Please enter  Negative Amount only",
+   "fieldname": "vat_to_be_adjusted_from_last_month",
+   "fieldtype": "Currency",
+   "label": "VAT to be adjusted from last month"
+  }
+ ],
+ "links": [],
+ "modified": "2022-04-30 12:56:11.073150",
+ "modified_by": "Administrator",
+ "module": "Silverlining",
+ "name": "VAT RETURN",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
